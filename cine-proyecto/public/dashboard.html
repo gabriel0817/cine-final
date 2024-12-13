@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido, <span id="nombre-usuario"></span> 🎥</h1>
+    <nav>
+      <a href="cartelera.html">Cartelera</a>
+      <a href="reservas.html">Reservar Asientos</a>
+      <button id="logout">Cerrar Sesión</button>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <h2>Historial de Reservas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Película</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Asientos</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="historial-reservas">
+          <!-- Reservas del usuario se cargarán aquí -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 CineMaster - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="./js/dashboard.js"></script>
+</body>
+</html>

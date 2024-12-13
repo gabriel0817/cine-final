@@ -1,0 +1,26 @@
+para agregar peliculas a la base de datos
+
+INSERT INTO peliculas (titulo, sinopsis, genero, clasificacion, duracion, imagen_poster, fecha_estreno)
+VALUES
+('Interestelar', 'Un viaje épico a través del espacio y el tiempo.', 'Ciencia Ficción', 'PG-13', 169, 'https://images.app.goo.gl/ZaY4bXWnP4RZph218', '2014-11-07'),
+('Avatar', 'Una increíble aventura en Pandora.', 'Acción', 'PG-13', 162, 'https://images.app.goo.gl/wFnT9jqW9PvgY2AX7', '2009-12-18'),
+('joker 2', 'El comediante fracasado Arthur Fleck conoce al amor de su vida, Harley Quinn, mientras está en el Hospital Estatal de Arkham. Al ser liberados, la pareja se embarca en una aventura romántica.', 'Acción - musical - drama', 'PG-15', 162, 'https://images.app.goo.gl/WwHpLJj4JN3gvNnw8', '2024-10-04'),
+('Beetlejuice 2', 'Después de una tragedia tres generaciones de la familia Deetz regresan a Winter River. Aún atormentada por Beetlejuice la vida de Lydia da un vuelco cuando su rebelde hija adolescente Astrid descubre el misterioso modelo de la ciudad en el ático.', 'terror - comedia', 'PG-15', 162, 'https://images.app.goo.gl/zSkD84ttM55LKF5e9', '2024-09-06');
+
+
+INSERT INTO usuarios (nombre, correo_electronico, contrase±a) 
+VALUES ('Test Usuario', 'test@correo.com', 'password123');
+
+-- Insertar asientos para la película con pelicula_id = 1 deberian de agregarsea todas las peliculas para que se puedan reservar los hacientos 
+INSERT INTO asientos (id, fila, columna, reservado, pelicula_id, numero)
+VALUES
+    (DEFAULT, 1, 1, false, 1, 1),   -- Asiento 1
+    (DEFAULT, 1, 2, false, 1, 2),   -- Asiento 2
+    (DEFAULT, 1, 3, false, 1, 3),   -- Asiento 3
+    (DEFAULT, 1, 4, false, 1, 4),   -- Asiento 4
+    (DEFAULT, 2, 1, false, 1, 5),   -- Asiento 5
+    (DEFAULT, 2, 2, false, 1, 6),   -- Asiento 6
+    (DEFAULT, 2, 3, false, 1, 7),   -- Asiento 7
+    (DEFAULT, 2, 4, false, 1, 8),   -- Asiento 8
+    (DEFAULT, 3, 1, false, 1, 9),   -- Asiento 9
+    (DEFAULT, 3, 2, false, 1, 10);  -- Asiento 10
